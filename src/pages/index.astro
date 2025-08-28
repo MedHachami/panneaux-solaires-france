@@ -1,0 +1,395 @@
+---
+import MainLayout from "../layouts/BaseLayout.astro";
+---
+
+<MainLayout>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="#panneaux-solaires-accueil" class="logo">
+          <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="m12 2 3 10h-6l3-10z"/>
+            <path d="m12 22-3-10h6l-3 10z"/>
+            <path d="m17 16 3-10h-6l3 10z"/>
+            <path d="m7 16-3-10h6l-3 10z"/>
+          </svg>
+          <span class="logo-text">Calhan Energies</span>
+        </a>
+        <nav class="nav" aria-label="Navigation principale">
+          <a href="#panneaux-solaires-accueil" aria-label="Aller à la section accueil panneaux solaires">Accueil</a>
+          <a href="#avantages-panneaux-solaires" aria-label="Découvrir les avantages des panneaux solaires">Avantages</a>
+          <a href="#devis-panneaux-solaires" aria-label="Obtenir un devis gratuit pour panneaux solaires">Devis</a>
+          <a href="#contact-installation-solaire" aria-label="Contacter nos experts en installation solaire">Contact</a>
+        </nav>
+        <a href="#devis-panneaux-solaires" class="btn btn-primary" aria-label="Obtenir un devis gratuit immédiatement">Devis Gratuit</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section id="panneaux-solaires-accueil" class="hero">
+      <div class="hero-bg"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M11.767 19.089c4.924.868 6.14-6.025 1.216-6.894m-1.216 6.894L5.86 18.047m5.908 1.042-.347 1.97m1.563-8.864c4.924.869 6.14-6.025 1.216-6.894m0 0L8.35 4.2m4.85 1.835-.347 1.97m0 0L9.26 9.044M7.404 6.047l-.348 1.97"/>
+            </svg>
+            Énergie 100% Renouvelable
+          </div>
+          <h1 class="hero-title">
+            Installation Panneaux Solaires France - <span class="highlight">Devis Gratuit 24h</span>
+          </h1>
+          <p class="hero-description">
+            Spécialiste de l'installation de panneaux solaires photovoltaïques en France. Réduisez vos factures d'électricité jusqu'à 70% avec nos solutions solaires haute performance. Devis gratuit, installation certifiée RGE, garantie 25 ans.
+          </p>
+          <div class="hero-buttons">
+            <a href="#devis-panneaux-solaires" class="btn btn-primary btn-lg" aria-label="Obtenir un devis gratuit pour installation panneaux solaires">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+              Devis Gratuit Immédiat
+            </a>
+            <a href="tel:+33123456789" class="btn btn-outline btn-lg" aria-label="Appeler nos experts en panneaux solaires">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              01 23 45 67 89
+            </a>
+          </div>
+          <div class="hero-features">
+            <div class="feature-item">
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 12l2 2 4-4"/>
+                <circle cx="12" cy="12" r="9"/>
+              </svg>
+              Devis en 24h
+            </div>
+            <div class="feature-item">
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 12l2 2 4-4"/>
+                <circle cx="12" cy="12" r="9"/>
+              </svg>
+              Installation certifiée RGE
+            </div>
+            <div class="feature-item">
+              <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 12l2 2 4-4"/>
+                <circle cx="12" cy="12" r="9"/>
+              </svg>
+              Garantie 25 ans
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="/images/installation-panneaux-solaires-maison.jpg" alt="Installation de panneaux solaires sur une maison française" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="avantages-panneaux-solaires" class="benefits">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Avantages des Panneaux Solaires Photovoltaïques en France</h2>
+          <p class="section-description">
+            Découvrez pourquoi plus de 10 000 foyers français ont choisi l'énergie solaire pour réduire leurs factures d'électricité
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+            <h3>Économies d'Électricité Garanties</h3>
+            <p>Réduisez vos factures d'électricité de 50% à 70% grâce aux panneaux solaires. Amortissement en 8-12 ans, puis électricité gratuite pendant 15+ ans. Rentabilité prouvée sur toute la France.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M11.767 19.089c4.924.868 6.14-6.025 1.216-6.894m-1.216 6.894L5.86 18.047m5.908 1.042-.347 1.97m1.563-8.864c4.924.869 6.14-6.025 1.216-6.894m0 0L8.35 4.2m4.85 1.835-.347 1.97m0 0L9.26 9.044M7.404 6.047l-.348 1.97"/>
+              </svg>
+            </div>
+            <h3>Énergie Renouvelable et Écologique</h3>
+            <p>Réduisez votre empreinte carbone de 3-4 tonnes de CO₂ par an avec l'énergie solaire photovoltaïque. Contribuez à la transition énergétique française et à un avenir plus vert. <a href="https://www.ecologie.gouv.fr/energies-renouvelables" target="_blank" rel="noopener noreferrer">En savoir plus sur les énergies renouvelables</a></p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>Indépendance Énergétique France</h3>
+            <p>Protégez-vous contre la hausse des prix de l'électricité en France. Produisez votre propre énergie solaire propre et durable avec nos installations photovoltaïques certifiées. <a href="https://www.economie.gouv.fr/particuliers/prix-electricite-gaz" target="_blank" rel="noopener noreferrer">Consultez les tarifs réglementés</a></p>
+          </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="stats-grid">
+          <div>
+            <div class="stat-number">25 ans</div>
+            <div class="stat-label">Garantie panneaux solaires</div>
+          </div>
+          <div>
+            <div class="stat-number">70%</div>
+            <div class="stat-label">Économies électricité max</div>
+          </div>
+          <div>
+            <div class="stat-number">24h</div>
+            <div class="stat-label">Délai devis gratuit</div>
+          </div>
+          <div>
+            <div class="stat-number">10 000+</div>
+            <div class="stat-label">Clients satisfaits France</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galerie-panneaux-solaires" class="gallery">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Nos Réalisations Panneaux Solaires en France</h2>
+          <p class="section-description">
+            Découvrez nos installations de panneaux photovoltaïques réalisées partout en France. Qualité, performance et satisfaction client garantie.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="/images/installation-panneaux-solaires-maison.png" alt="Installation panneaux solaires France - Vue d'ensemble" loading="lazy">
+            <div class="gallery-overlay">
+              <h3>Installation Complète</h3>
+              <p>Panneaux solaires haute performance installés sur toiture française</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="/images/panneaux-solaires-france.png" alt="Panneaux photovoltaïques modernes - Technologie avancée" loading="lazy">
+            <div class="gallery-overlay">
+              <h3>Technologie Moderne</h3>
+              <p>Panneaux photovoltaïques dernière génération pour rendement optimal</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="/images/panneaux-solaires-toit-francais.png" alt="Installation toit français - Intégration parfaite" loading="lazy">
+            <div class="gallery-overlay">
+              <h3>Intégration Parfaite</h3>
+              <p>Installation discrète et esthétique sur toit traditionnel français</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lead Generation Form -->
+    <section id="devis-panneaux-solaires" class="form-section">
+      <div class="container">
+        <div class="form-container">
+          <div class="section-header">
+            <h2 class="section-title">Devis Gratuit Installation Panneaux Solaires France</h2>
+            <p class="section-description">
+              Obtenez votre devis personnalisé gratuit pour l'installation de panneaux solaires photovoltaïques. Étude de faisabilité incluse, réponse en moins de 24h partout en France.
+            </p>
+          </div>
+
+          <div class="form-card">
+            <div class="form-header">
+              <div class="stars">
+                <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+                <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+                <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+                <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+                <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+              </div>
+              <h3 class="form-title">Devis Panneaux Solaires 100% Gratuit & Sans Engagement</h3>
+              <p class="form-description">Plus de 10 000 clients satisfaits nous font confiance pour leur installation solaire en France</p>
+            </div>
+            
+            <form class="form" aria-label="Formulaire de demande de devis panneaux solaires" action="#" method="POST">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="label" for="prenom">Prénom *</label>
+                  <input class="input" id="prenom" name="prenom" type="text" placeholder="Votre prénom" required>
+                </div>
+                <div class="form-group">
+                  <label class="label" for="nom">Nom *</label>
+                  <input class="input" id="nom" name="nom" type="text" placeholder="Votre nom" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="label" for="email">Email *</label>
+                <input class="input" id="email" name="email" type="email" placeholder="votre@email.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="label" for="telephone">Téléphone *</label>
+                <input class="input" id="telephone" name="telephone" type="tel" placeholder="06 12 34 56 78" required>
+              </div>
+
+              <div class="form-group">
+                <label class="label" for="code-postal">Code postal *</label>
+                <input class="input" id="code-postal" name="code-postal" type="text" placeholder="75001" required>
+                <p class="form-help">Nous intervenons dans toute la France métropolitaine</p>
+              </div>
+
+              <div class="form-group">
+                <label class="label" for="type-projet">Type de projet panneaux solaires</label>
+                <select class="select" id="type-projet" name="type-projet">
+                  <option value="">Sélectionnez votre type d'installation</option>
+                  <option value="maison-individuelle">Maison individuelle</option>
+                  <option value="appartement">Appartement avec toiture</option>
+                  <option value="entreprise">Entreprise / Commerce</option>
+                  <option value="exploitation-agricole">Exploitation agricole</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="label" for="surface-toit">Surface de toit disponible pour panneaux solaires (m²)</label>
+                <select class="select" id="surface-toit" name="surface-toit">
+                  <option value="">Estimez la surface de votre toiture</option>
+                  <option value="moins-30">Moins de 30 m² (petite installation)</option>
+                  <option value="30-60">30 à 60 m² (installation standard)</option>
+                  <option value="60-100">60 à 100 m² (grande installation)</option>
+                  <option value="plus-100">Plus de 100 m² (installation industrielle)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="label" for="message">Détails de votre projet solaire (optionnel)</label>
+                <textarea class="textarea" id="message" name="message" placeholder="Décrivez votre projet d'installation de panneaux solaires, vos questions sur l'énergie photovoltaïque..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg form-submit" aria-label="Envoyer ma demande de devis panneaux solaires gratuit">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                </svg>
+                Recevoir Mon Devis Panneaux Solaires Gratuit
+              </button>
+
+              <p class="form-disclaimer">
+                En soumettant ce formulaire, vous acceptez d'être contacté par nos conseillers spécialisés en panneaux solaires. Vos données personnelles sont protégées selon le RGPD et ne seront jamais vendues à des tiers.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact-installation-solaire" class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <div class="logo" style="margin-bottom: 1rem;">
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="m12 2 3 10h-6l3-10z"/>
+              <path d="m12 22-3-10h6l-3 10z"/>
+              <path d="m17 16 3-10h-6l3 10z"/>
+              <path d="m7 16-3-10h6l-3 10z"/>
+            </svg>
+            <span class="logo-text">Calhan Energies</span>
+          </div>
+          <p style="font-size: 0.875rem; color: var(--muted-foreground); line-height: 1.6;">
+            Spécialiste de l'installation de panneaux solaires photovoltaïques en France depuis 2015. Expertise certifiée RGE, qualité garantie et service client d'excellence pour votre transition énergétique.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Services Panneaux Solaires</h4>
+          <ul>
+            <li><a href="#devis-panneaux-solaires">Installation panneaux solaires</a></li>
+            <li><a href="#contact-installation-solaire">Maintenance photovoltaïque</a></li>
+            <li><a href="#avantages-panneaux-solaires">Étude de faisabilité gratuite</a></li>
+            <li><a href="#devis-panneaux-solaires">Financement panneaux solaires</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact Installation Solaire</h4>
+          <div class="footer-contact">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span >01 23 45 67 89</span>
+          </div>
+          <div class="footer-contact">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <a href="mailto:contact@calhan-energies.com">contact@calhan-energies.com</a>
+          </div>
+          <div class="footer-contact">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Installation panneaux solaires partout en France</span>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Certifications & Garanties</h4>
+          <div style="font-size: 0.875rem; color: var(--muted-foreground);">
+            <div style="margin-bottom: 0.5rem;">✓ <a href="https://www.qualit-enr.org/" target="_blank" rel="noopener noreferrer">Installateur RGE QualiPV</a></div>
+            <div style="margin-bottom: 0.5rem;">✓ <a href="https://www.qualibat.com/" target="_blank" rel="noopener noreferrer">Certification Qualibat</a></div>
+            <div style="margin-bottom: 0.5rem;">✓ Garantie décennale panneaux</div>
+            <div>✓ Assurance RC Professionnelle</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="footer-bottom">
+        <p>
+          &copy; 2024 Calhan Energies - Installation Panneaux Solaires France. Tous droits réservés. |
+          <a href="#">Mentions légales</a> |
+          <a href="#">Politique de confidentialité</a> |
+          <a href="#">Plan du site</a>
+        </p>
+      </div> -->
+    </div>
+  </footer>
+
+  <!-- Google Ads Conversion Tracking (to be configured) -->
+  <script>
+    // Form submission tracking for Google Ads
+    const form = document.querySelector('form');
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        // Add Google Ads conversion tracking here
+        console.log('Form submitted - track conversion');
+
+        // Example: gtag conversion tracking
+        // gtag('event', 'conversion', {
+        //     'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL',
+        //     'value': 1.0,
+        //     'currency': 'EUR'
+        // });
+      });
+    }
+  </script>
+</MainLayout>
