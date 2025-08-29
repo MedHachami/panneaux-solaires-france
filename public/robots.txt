@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://panneaux-solaires-france.fr/sitemap.xml
+Sitemap: https://calhan-energies.com/sitemap.xml
