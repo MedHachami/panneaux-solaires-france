@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://calhan-energies.com/sitemap.xml
+Sitemap: https://panneaux-solaires-france-y62r.vercel.app/sitemap.xml
