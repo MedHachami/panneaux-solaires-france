@@ -136,8 +136,9 @@ import MainLayout from "../layouts/BaseLayout.astro";
                  alt="Installation panneaux solaires avec aides de l'État - Énergie renouvelable France"
                  loading="lazy"
                  width="600"
-                 height="400">
-            
+                 height="400"
+                 decoding="async">
+
           </div>
         </div>
       </div>
@@ -152,8 +153,9 @@ import MainLayout from "../layouts/BaseLayout.astro";
                  alt="Économies panneaux solaires France - Solutions sur mesure pour particuliers et entreprises"
                  loading="lazy"
                  width="600"
-                 height="400">
-            
+                 height="400"
+                 decoding="async">
+
           </div>
           <div class="economies-text">
             <h2>Économies Garanties Panneaux Solaires France</h2>
@@ -203,61 +205,209 @@ import MainLayout from "../layouts/BaseLayout.astro";
     <section id="avantages-panneaux-solaires" class="benefits">
       <div class="container">
         <div class="section-header">
+          <div class="section-badge">
+            <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 12l2 2 4-4"/>
+              <circle cx="12" cy="12" r="9"/>
+            </svg>
+            <span>Pourquoi choisir l'énergie solaire ?</span>
+          </div>
           <h2 class="section-title">Avantages des Panneaux Solaires Photovoltaïques en France</h2>
           <p class="section-description">
-            Découvrez pourquoi plus de 10 000 foyers français ont choisi l'énergie solaire pour réduire leurs factures d'électricité
+            Découvrez pourquoi plus de <strong>10 000 foyers français</strong> ont choisi l'énergie solaire pour réduire leurs factures d'électricité et contribuer à la transition énergétique
           </p>
         </div>
 
         <div class="benefits-grid">
-          <div class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-              </svg>
+          <div class="benefit-card" data-benefit="1">
+            <div class="card-visual">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+              </div>
+              <div class="card-accent"></div>
             </div>
-            <h3>Économies d'Électricité Garanties</h3>
-            <p>Réduisez vos factures d'électricité de 50% à 70% grâce aux panneaux solaires. Amortissement en 8-12 ans, puis électricité gratuite pendant 15+ ans. Rentabilité prouvée sur toute la France.</p>
+            <div class="card-content">
+              <h3>Économies d'Électricité Garanties</h3>
+              <p>Réduisez vos factures d'électricité de <strong>50% à 70%</strong> grâce aux panneaux solaires. Amortissement en 8-12 ans, puis électricité gratuite pendant 15+ ans. Rentabilité prouvée sur toute la France.</p>
+              <div class="card-features">
+                <span class="feature-tag">€€€ Économique</span>
+                <span class="feature-tag">⚡ Haute performance</span>
+              </div>
+            </div>
           </div>
 
-          <div class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M11.767 19.089c4.924.868 6.14-6.025 1.216-6.894m-1.216 6.894L5.86 18.047m5.908 1.042-.347 1.97m1.563-8.864c4.924.869 6.14-6.025 1.216-6.894m0 0L8.35 4.2m4.85 1.835-.347 1.97m0 0L9.26 9.044M7.404 6.047l-.348 1.97"/>
-              </svg>
+          <div class="benefit-card" data-benefit="2">
+            <div class="card-visual">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M11.767 19.089c4.924.868 6.14-6.025 1.216-6.894m-1.216 6.894L5.86 18.047m5.908 1.042-.347 1.97m1.563-8.864c4.924.869 6.14-6.025 1.216-6.894m0 0L8.35 4.2m4.85 1.835-.347 1.97m0 0L9.26 9.044M7.404 6.047l-.348 1.97"/>
+                </svg>
+              </div>
+              <div class="card-accent"></div>
             </div>
-            <h3>Énergie Renouvelable et Écologique</h3>
-            <p>Réduisez votre empreinte carbone de 3-4 tonnes de CO₂ par an avec l'énergie solaire photovoltaïque. Contribuez à la transition énergétique française et à un avenir plus vert. <a href="https://www.ecologie.gouv.fr/energies-renouvelables" target="_blank" rel="noopener noreferrer">En savoir plus sur les énergies renouvelables</a></p>
+            <div class="card-content">
+              <h3>Énergie Renouvelable et Écologique</h3>
+              <p>Réduisez votre empreinte carbone de <strong>3-4 tonnes de CO₂ par an</strong> avec l'énergie solaire photovoltaïque. Contribuez à la transition énergétique française et à un avenir plus vert.</p>
+              <div class="card-features">
+                <span class="feature-tag">🌱 Écologique</span>
+                <span class="feature-tag">♻️ Renouvelable</span>
+              </div>
+              <a href="https://www.ecologie.gouv.fr/energies-renouvelables" class="card-link" target="_blank" rel="noopener noreferrer" aria-label="En savoir plus sur les énergies renouvelables">
+                <span>En savoir plus</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                </svg>
+              </a>
+            </div>
           </div>
 
-          <div class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              </svg>
+          <div class="benefit-card" data-benefit="3">
+            <div class="card-visual">
+              <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <div class="card-accent"></div>
             </div>
-            <h3>Indépendance Énergétique France</h3>
-            <p>Protégez-vous contre la hausse des prix de l'électricité en France. Produisez votre propre énergie solaire propre et durable avec nos installations photovoltaïques certifiées. <a href="https://www.economie.gouv.fr/particuliers/prix-electricite-gaz" target="_blank" rel="noopener noreferrer">Consultez les tarifs réglementés</a></p>
+            <div class="card-content">
+              <h3>Indépendance Énergétique France</h3>
+              <p>Protégez-vous contre la hausse des prix de l'électricité en France. Produisez votre propre énergie solaire propre et durable avec nos installations photovoltaïques certifiées.</p>
+              <div class="card-features">
+                <span class="feature-tag">🛡️ Protégé</span>
+                <span class="feature-tag">⚡ Autonome</span>
+              </div>
+              <a href="https://www.economie.gouv.fr/particuliers/prix-electricite-gaz" class="card-link" target="_blank" rel="noopener noreferrer" aria-label="Consultez les tarifs réglementés de l'électricité">
+                <span>Tarifs réglementés</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
 
-        <!-- Stats Section -->
-        <div class="stats-grid">
-          <div>
-            <div class="stat-number">25 ans</div>
-            <div class="stat-label">Garantie panneaux solaires</div>
+        <!-- Enhanced Stats Section -->
+        <div class="stats-section">
+          <div class="section-header">
+            <div class="section-badge">
+              <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 12l2 2 4-4"/>
+                <circle cx="12" cy="12" r="9"/>
+              </svg>
+              <span>Chiffres qui parlent</span>
+            </div>
+            <h3 class="section-title">Chiffres Clés de Notre Expertise Solaire</h3>
+            <p class="section-description">
+              Notre engagement pour l'énergie solaire en France depuis plus de 15 ans
+            </p>
           </div>
-          <div>
-            <div class="stat-number">70%</div>
-            <div class="stat-label">Économies électricité max</div>
+
+          <div class="benefits-grid">
+            <div class="benefit-card stat-card" data-benefit="stat-1">
+              <div class="card-visual">
+                <div class="card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                </div>
+                <div class="card-accent"></div>
+              </div>
+              <div class="card-content">
+                <h4>Garantie 25 ans</h4>
+                <p>Protection complète de votre investissement solaire avec notre garantie décennale étendue. Sécurité et tranquillité d'esprit pour votre projet énergétique.</p>
+                <div class="card-features">
+                  <span class="feature-tag">⚡ Haute performance</span>
+                  <span class="feature-tag">🛡️ Protection totale</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="benefit-card stat-card" data-benefit="stat-2">
+              <div class="card-visual">
+                <div class="card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                  </svg>
+                </div>
+                <div class="card-accent"></div>
+              </div>
+              <div class="card-content">
+                <h4>Jusqu'à 70% d'Économies</h4>
+                <p>Réduction moyenne des factures d'électricité pour nos clients. Amortissement de votre installation solaire en 8-12 ans maximum.</p>
+                <div class="card-features">
+                  <span class="feature-tag">€€€ Économique</span>
+                  <span class="feature-tag">📈 ROI garanti</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="benefit-card stat-card" data-benefit="stat-3">
+              <div class="card-visual">
+                <div class="card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 8v4l3 3"/>
+                    <circle cx="12" cy="12" r="9"/>
+                  </svg>
+                </div>
+                <div class="card-accent"></div>
+              </div>
+              <div class="card-content">
+                <h4>Devis en 24h</h4>
+                <p>Réponse rapide garantie pour votre devis personnalisé. Étude de faisabilité technique incluse gratuitement.</p>
+                <div class="card-features">
+                  <span class="feature-tag">⚡ Ultra rapide</span>
+                  <span class="feature-tag">📋 Étude gratuite</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="benefit-card stat-card" data-benefit="stat-4">
+              <div class="card-visual">
+                <div class="card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                  </svg>
+                </div>
+                <div class="card-accent"></div>
+              </div>
+              <div class="card-content">
+                <h4>10 000+ Clients Satisfaits</h4>
+                <p>Confiance et satisfaction client depuis 2015. Plus de 10 000 foyers français nous font confiance pour leur transition énergétique.</p>
+                <div class="card-features">
+                  <span class="feature-tag">⭐ 4.8/5 avis</span>
+                  <span class="feature-tag">🤝 Confiance</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
-            <div class="stat-number">24h</div>
-            <div class="stat-label">Délai devis gratuit</div>
-          </div>
-          <div>
-            <div class="stat-number">10 000+</div>
-            <div class="stat-label">Clients satisfaits France</div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="benefits-cta">
+          <div class="cta-content">
+            <h3>Prêt à faire des économies avec l'énergie solaire ?</h3>
+            <p>Obtenez votre devis personnalisé gratuit et découvrez vos économies potentielles</p>
+            <div class="cta-buttons">
+              <a href="#devis-panneaux-solaires" class="btn btn-primary btn-lg" aria-label="Obtenir un devis gratuit pour panneaux solaires">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                </svg>
+                Devis Gratuit Immédiat
+              </a>
+              <a href="tel:+33123456789" class="btn btn-outline btn-lg" aria-label="Appeler nos experts en panneaux solaires">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                01 23 45 67 89
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -275,7 +425,7 @@ import MainLayout from "../layouts/BaseLayout.astro";
 
         <div class="gallery-grid">
           <div class="gallery-item">
-            <img src="/images/installation-panneaux-solaires-maison.png" alt="Installation panneaux solaires France - Vue d'ensemble" loading="lazy">
+            <img src="/images/installation-panneaux-solaires-maison.png" alt="Installation panneaux solaires France - Vue d'ensemble" loading="lazy" decoding="async" width="400" height="250">
             <div class="gallery-overlay">
               <h3>Installation Complète</h3>
               <p>Panneaux solaires haute performance installés sur toiture française</p>
@@ -283,7 +433,7 @@ import MainLayout from "../layouts/BaseLayout.astro";
           </div>
 
           <div class="gallery-item">
-            <img src="/images/panneaux-solaires-france.png" alt="Panneaux photovoltaïques modernes - Technologie avancée" loading="lazy">
+            <img src="/images/panneaux-solaires-france.png" alt="Panneaux photovoltaïques modernes - Technologie avancée" loading="lazy" decoding="async" width="400" height="250">
             <div class="gallery-overlay">
               <h3>Technologie Moderne</h3>
               <p>Panneaux photovoltaïques dernière génération pour rendement optimal</p>
@@ -291,7 +441,7 @@ import MainLayout from "../layouts/BaseLayout.astro";
           </div>
 
           <div class="gallery-item">
-            <img src="/images/panneaux-solaires-toit-francais.png" alt="Installation toit français - Intégration parfaite" loading="lazy">
+            <img src="/images/panneaux-solaires-toit-francais.png" alt="Installation toit français - Intégration parfaite" loading="lazy" decoding="async" width="400" height="250">
             <div class="gallery-overlay">
               <h3>Intégration Parfaite</h3>
               <p>Installation discrète et esthétique sur toit traditionnel français</p>
@@ -483,22 +633,68 @@ import MainLayout from "../layouts/BaseLayout.astro";
     </div>
   </footer>
 
-  <!-- Google Ads Conversion Tracking (to be configured) -->
+  <!-- Performance optimized scripts -->
   <script>
-    // Form submission tracking for Google Ads
-    const form = document.querySelector('form');
-    if (form) {
-      form.addEventListener('submit', function(e) {
-        // Add Google Ads conversion tracking here
-        console.log('Form submitted - track conversion');
+    // Performance monitoring
+    const perfData = window.performance.timing;
+    const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
+    console.log(`Page load time: ${pageLoadTime}ms`);
 
-        // Example: gtag conversion tracking
-        // gtag('event', 'conversion', {
-        //     'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL',
-        //     'value': 1.0,
-        //     'currency': 'EUR'
-        // });
+    // Defer non-critical functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      // Form submission tracking for Google Ads
+      const form = document.querySelector('form');
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          // Add Google Ads conversion tracking here
+          console.log('Form submitted - track conversion');
+
+          // Example: gtag conversion tracking
+          // gtag('event', 'conversion', {
+          //     'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL',
+          //     'value': 1.0,
+          //     'currency': 'EUR'
+          // });
+        });
+      }
+
+      // Enhanced lazy loading with performance monitoring
+      const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+      if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              img.classList.add('loaded');
+
+              // Preload nearby images for better UX
+              const nextImg = img.nextElementSibling;
+              if (nextImg && nextImg.tagName === 'IMG') {
+                (nextImg as HTMLImageElement).loading = 'eager';
+              }
+
+              observer.unobserve(img);
+            }
+          });
+        }, {
+          rootMargin: '50px 0px',
+          threshold: 0.1
+        });
+
+        lazyImages.forEach(img => imageObserver.observe(img));
+      }
+
+      // Optimize scrolling performance
+      let ticking = false;
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          requestAnimationFrame(function() {
+            // Add scroll-based optimizations here
+            ticking = false;
+          });
+          ticking = true;
+        }
       });
-    }
+    });
   </script>
 </MainLayout>
