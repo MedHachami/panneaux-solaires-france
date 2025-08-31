@@ -19,36 +19,30 @@ After your project is ready, go to the SQL Editor in your Supabase dashboard and
 ```sql
 -- Create leads table
 CREATE TABLE leads (
-  id SERIAL PRIMARY KEY,
-  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
-  updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
-
   -- Personal Information
-  first_name TEXT,
-  last_name TEXT,
   name TEXT,
   email TEXT NOT NULL,
   phone TEXT NOT NULL,
-
-  -- Project Information
+  address TEXT NOT NULL,
+  
+  -- Project Information  
   postal_code TEXT NOT NULL,
   project_type TEXT,
-  roof_surface TEXT,
+  heating_type TEXT,
   current_energy_bill TEXT,
   preferred_contact_time TEXT,
-  message TEXT,
-
+  
   -- Consent & Preferences
   newsletter BOOLEAN DEFAULT FALSE,
   terms BOOLEAN DEFAULT TRUE,
-
+  
   -- Tracking
   source TEXT DEFAULT 'website_form',
   form_type TEXT DEFAULT 'general',
-  status TEXT DEFAULT 'new',
-  ip_address INET,
-  user_agent TEXT
+  status TEXT DEFAULT 'new'
 );
+ALTER TABLE leads ADD COLUMN created_at timestamptz DEFAULT now();
+
 
 -- Create indexes for better performance
 CREATE INDEX idx_leads_email ON leads(email);
@@ -139,7 +133,32 @@ npm run dev
 | `name` | TEXT | Full name (computed) |
 | `email` | TEXT | Email address (required) |
 | `phone` | TEXT | Phone number (required) |
+| `address` | TEXT | Complete address (required) |
 | `postal_code` | TEXT | Postal code (required) |
+
+## 📊 Sample Lead Record
+
+```json
+{
+  "id": 123,
+  "created_at": "2024-01-15T10:30:00Z",
+  "updated_at": "2024-01-15T10:30:00Z",
+  "name": "Jean Dupont",
+  "email": "jean.dupont@email.com",
+  "phone": "06 12 34 56 78",
+  "address": "123 Rue de la Paix, 75001 Paris",
+  "postal_code": "75",
+  "project_type": "house",
+  "heating_type": "gas",
+  "current_energy_bill": "1500-2000",
+  "preferred_contact_time": "Oui",
+  "newsletter": true,
+  "terms": true,
+  "source": "website_form",
+  "form_type": "multi_step_solar_form",
+  "status": "new"
+}
+```
 | `project_type` | TEXT | Type of solar project |
 | `roof_surface` | TEXT | Available roof surface |
 | `current_energy_bill` | TEXT | Current energy bill range |
@@ -151,7 +170,32 @@ npm run dev
 | `form_type` | TEXT | Type of form submitted |
 | `status` | TEXT | Lead status (new, contacted, qualified, etc.) |
 
-## 🔧 Advanced Configuration
+## 📋 Form Data Mapping
+
+### **Step 1 Fields → Database**
+```javascript
+{
+  postal_code: formData.department,      // → postal_code (department code)
+  project_type: formData.propertyType,   // → project_type (house/apartment)
+  heating_type: formData.heatingType,    // → heating_type (gas/oil/wood/electric)
+  current_energy_bill: formData.energyBill, // → current_energy_bill (ranges)
+  status: formData.status               // → status (owner/tenant)
+}
+```
+
+### **Step 2 Fields → Database**
+```javascript
+{
+  name: formData.fullName,                    // → name
+  email: formData.email,                      // → email
+  phone: formData.phone,                      // → phone
+  address: formData.address,                  // → address
+  preferred_contact_time: formData.callback,  // → preferred_contact_time (boolean)
+  newsletter: formData.newsletter             // → newsletter
+}
+```
+
+##  Advanced Configuration
 
 ### Email Notifications
 

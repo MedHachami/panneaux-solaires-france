@@ -13,6 +13,7 @@ export default function LeadForm() {
     fullName: '',
     phone: '',
     email: '',
+    address: '',
     callback: false,
     newsletter: false
   });
@@ -68,6 +69,10 @@ export default function LeadForm() {
       newErrors.email = 'L\'email n\'est pas valide';
     }
 
+    if (!formData.address.trim()) {
+      newErrors.address = 'L\'adresse est requise';
+    }
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -95,12 +100,12 @@ export default function LeadForm() {
         name: formData.fullName,
         email: formData.email,
         phone: formData.phone,
-        status: formData.status,
-        property_type: formData.propertyType,
+        address: formData.address,
+        postal_code: formData.department,
+        project_type: `${formData.status} - ${formData.propertyType}`,
         heating_type: formData.heatingType,
-        energy_bill: formData.energyBill,
-        department: formData.department,
-        callback: formData.callback,
+        current_energy_bill: formData.energyBill,
+        preferred_contact_time: formData.callback ? 'Oui' : null,
         newsletter: formData.newsletter,
         form_type: 'multi_step_solar_form'
       });
@@ -116,6 +121,7 @@ export default function LeadForm() {
           fullName: '',
           phone: '',
           email: '',
+          address: '',
           callback: false,
           newsletter: false
         });
@@ -124,6 +130,7 @@ export default function LeadForm() {
         setSubmitStatus('error');
       }
     } catch (error) {
+      console.error('Submission error:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -135,7 +142,7 @@ export default function LeadForm() {
       <div className="container">
         <div className="form-section-header">
           <div className="form-section-badge">
-            <svg className="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg className="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M9 12l2 2 4-4"/>
               <circle cx="12" cy="12" r="9"/>
             </svg>
@@ -446,6 +453,21 @@ export default function LeadForm() {
                           required
                         />
                         {errors.email && <span className="error-text">{errors.email}</span>}
+                      </div>
+                      <div className="form-group-compact">
+                        <label className="form-label required">Adresse complète</label>
+                        <i className="fas fa-map-marker-alt form-input-icon"></i>
+                        <input
+                          type="text"
+                          name="address"
+                          id="address"
+                          placeholder="123 Rue de la Paix, 75001 Paris"
+                          value={formData.address}
+                          onChange={handleInputChange}
+                          className={`form-input-compact ${errors.address ? 'error' : ''}`}
+                          required
+                        />
+                        {errors.address && <span className="error-text">{errors.address}</span>}
                       </div>
                     </div>
                   </div>
