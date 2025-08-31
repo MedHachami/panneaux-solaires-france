@@ -1,5 +1,6 @@
 ---
 import MainLayout from "../layouts/BaseLayout.astro";
+import LeadForm from "../components/LeadForm.jsx";
 ---
 
 <MainLayout>
@@ -15,7 +16,7 @@ import MainLayout from "../layouts/BaseLayout.astro";
             <path d="m17 16 3-10h-6l3 10z"/>
             <path d="m7 16-3-10h6l-3 10z"/>
           </svg>
-          <span class="logo-text">Calhan Energies</span>
+          <span class="logo-text">EcoSolaire</span>
         </a>
         <nav class="nav" aria-label="Navigation principale">
           <a href="#panneaux-solaires-accueil" aria-label="Aller à la section accueil panneaux solaires">Accueil</a>
@@ -34,7 +35,7 @@ import MainLayout from "../layouts/BaseLayout.astro";
       <div class="hero-bg"></div>
       <div class="container">
         <div class="hero-content">
-          <div class="badge">
+          <div class="section-badge">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M11.767 19.089c4.924.868 6.14-6.025 1.216-6.894m-1.216 6.894L5.86 18.047m5.908 1.042-.347 1.97m1.563-8.864c4.924.869 6.14-6.025 1.216-6.894m0 0L8.35 4.2m4.85 1.835-.347 1.97m0 0L9.26 9.044M7.404 6.047l-.348 1.97"/>
             </svg>
@@ -53,12 +54,12 @@ import MainLayout from "../layouts/BaseLayout.astro";
               </svg>
               Demander un Devis
             </a>
-            <a href="tel:+33123456789" class="btn btn-outline btn-lg" aria-label="Appeler nos experts en panneaux solaires">
+            <button class="btn btn-outline btn-lg" aria-label="Appeler nos experts en panneaux solaires">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
               </svg>
               01 23 45 67 89
-            </a>
+            </button>
           </div>
           <div class="hero-features">
             <div class="feature-item">
@@ -410,9 +411,9 @@ import MainLayout from "../layouts/BaseLayout.astro";
             </div>
           </div>
         </div>
+
       </div>
     </section>
-
     <!-- Gallery Section -->
     <section id="galerie-panneaux-solaires" class="gallery">
       <div class="container">
@@ -454,105 +455,7 @@ import MainLayout from "../layouts/BaseLayout.astro";
     <!-- Lead Generation Form -->
     <section id="devis-panneaux-solaires" class="form-section">
       <div class="container">
-        <div class="form-container">
-          <div class="section-header">
-            <h2 class="section-title">Devis Gratuit Installation Panneaux Solaires France</h2>
-            <p class="section-description">
-              Obtenez votre devis personnalisé gratuit pour l'installation de panneaux solaires photovoltaïques. Étude de faisabilité incluse, réponse en moins de 24h partout en France.
-            </p>
-          </div>
-
-          <div class="form-card">
-            <div class="form-header">
-              <div class="stars">
-                <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                </svg>
-                <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                </svg>
-                <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                </svg>
-                <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                </svg>
-                <svg class="star" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                </svg>
-              </div>
-              <h3 class="form-title">Devis Panneaux Solaires 100% Gratuit & Sans Engagement</h3>
-              <p class="form-description">Plus de 10 000 clients satisfaits nous font confiance pour leur installation solaire en France</p>
-            </div>
-            
-            <form class="form" aria-label="Formulaire de demande de devis panneaux solaires" action="#" method="POST">
-              <div class="form-row">
-                <div class="form-group">
-                  <label class="label" for="prenom">Prénom *</label>
-                  <input class="input" id="prenom" name="prenom" type="text" placeholder="Votre prénom" required>
-                </div>
-                <div class="form-group">
-                  <label class="label" for="nom">Nom *</label>
-                  <input class="input" id="nom" name="nom" type="text" placeholder="Votre nom" required>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label class="label" for="email">Email *</label>
-                <input class="input" id="email" name="email" type="email" placeholder="votre@email.com" required>
-              </div>
-
-              <div class="form-group">
-                <label class="label" for="telephone">Téléphone *</label>
-                <input class="input" id="telephone" name="telephone" type="tel" placeholder="06 12 34 56 78" required>
-              </div>
-
-              <div class="form-group">
-                <label class="label" for="code-postal">Code postal *</label>
-                <input class="input" id="code-postal" name="code-postal" type="text" placeholder="75001" required>
-                <p class="form-help">Nous intervenons dans toute la France métropolitaine</p>
-              </div>
-
-              <div class="form-group">
-                <label class="label" for="type-projet">Type de projet panneaux solaires</label>
-                <select class="select" id="type-projet" name="type-projet">
-                  <option value="">Sélectionnez votre type d'installation</option>
-                  <option value="maison-individuelle">Maison individuelle</option>
-                  <option value="appartement">Appartement avec toiture</option>
-                  <option value="entreprise">Entreprise / Commerce</option>
-                  <option value="exploitation-agricole">Exploitation agricole</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label class="label" for="surface-toit">Surface de toit disponible pour panneaux solaires (m²)</label>
-                <select class="select" id="surface-toit" name="surface-toit">
-                  <option value="">Estimez la surface de votre toiture</option>
-                  <option value="moins-30">Moins de 30 m² (petite installation)</option>
-                  <option value="30-60">30 à 60 m² (installation standard)</option>
-                  <option value="60-100">60 à 100 m² (grande installation)</option>
-                  <option value="plus-100">Plus de 100 m² (installation industrielle)</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label class="label" for="message">Détails de votre projet solaire (optionnel)</label>
-                <textarea class="textarea" id="message" name="message" placeholder="Décrivez votre projet d'installation de panneaux solaires, vos questions sur l'énergie photovoltaïque..."></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary btn-lg form-submit" aria-label="Envoyer ma demande de devis panneaux solaires gratuit">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
-                </svg>
-                Recevoir Mon Devis Panneaux Solaires Gratuit
-              </button>
-
-              <p class="form-disclaimer">
-                En soumettant ce formulaire, vous acceptez d'être contacté par nos conseillers spécialisés en panneaux solaires. Vos données personnelles sont protégées selon le RGPD et ne seront jamais vendues à des tiers.
-              </p>
-            </form>
-          </div>
-        </div>
+        <LeadForm client:load />
       </div>
     </section>
   </main>
@@ -570,7 +473,7 @@ import MainLayout from "../layouts/BaseLayout.astro";
               <path d="m17 16 3-10h-6l3 10z"/>
               <path d="m7 16-3-10h6l-3 10z"/>
             </svg>
-            <span class="logo-text">Calhan Energies</span>
+            <span class="logo-text">EcoSolaire</span>
           </div>
           <p style="font-size: 0.875rem; color: var(--muted-foreground); line-height: 1.6;">
             Spécialiste de l'installation de panneaux solaires photovoltaïques en France depuis 2015. Expertise certifiée RGE, qualité garantie et service client d'excellence pour votre transition énergétique.
@@ -600,7 +503,7 @@ import MainLayout from "../layouts/BaseLayout.astro";
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
               <polyline points="22,6 12,13 2,6"/>
             </svg>
-            <a href="mailto:contact@calhan-energies.com">contact@calhan-energies.com</a>
+            <a href="mailto:contact@EcoSolaire.com">contact@EcoSolaire.com</a>
           </div>
           <div class="footer-contact">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">

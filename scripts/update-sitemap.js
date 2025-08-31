@@ -30,6 +30,12 @@ try {
         `<lastmod>${currentDate}</lastmod>`
     );
 
+    // Also update any old Vercel domains to the correct domain
+    sitemapContent = sitemapContent.replace(
+        /https:\/\/panneaux-solaires-france-y62r\.vercel\.app/g,
+        'https://calhan-energies.com'
+    );
+
     // Write the updated content back to the file
     fs.writeFileSync(sitemapPath, sitemapContent, 'utf8');
 

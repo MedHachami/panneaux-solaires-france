@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
@@ -9,7 +10,7 @@ export default defineConfig({
             changefreq: 'weekly',
             priority: 0.7,
             lastmod: new Date('2025-01-15'),
-        })
+        }), [react()]
     ],
     output: 'static',
     compressHTML: true,
