@@ -707,10 +707,10 @@ p {
 /* Stats Section - Matching Benefits Section Style */
 
 .stats-section {
-    background: white;
+    /* background: white; */
     border-radius: 1rem;
     padding: 3rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);  */
     margin-bottom: 4rem;
 }
 
