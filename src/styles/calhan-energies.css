@@ -125,6 +125,12 @@ p {
     font-size: 1.25rem;
     font-weight: 700;
 }
+.logo-img{
+    height: 68px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 100px;
+}
 
 .nav {
     display: none;
@@ -280,12 +286,13 @@ p {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+
 }
 
 .check-icon {
     width: 1rem;
     height: 1rem;
-    color: var(--primary);
+    color: linear-gradient(135deg, var(--primary), var(--accent));
 }
 
 
