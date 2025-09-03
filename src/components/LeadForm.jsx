@@ -160,7 +160,7 @@ export default function LeadForm() {
           <div className="form-content-column">
            
             <div className="content-text">
-              <h3>Pourquoi choisir EcoSolaire ?</h3>
+              <h3>Pourquoi choisir Autoconsommation Solaire france ?</h3>
               
               <TrustBadges />
             </div>

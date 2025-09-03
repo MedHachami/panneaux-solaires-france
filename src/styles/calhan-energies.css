@@ -125,7 +125,8 @@ p {
     font-size: 1.25rem;
     font-weight: 700;
 }
-.logo-img{
+
+.logo-img {
     height: 68px;
     width: auto;
     object-fit: contain;
@@ -515,13 +516,14 @@ p {
     align-items: center;
     gap: 0.5rem;
     padding: 0.5rem 1rem;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
     color: white;
     border-radius: 50px;
     font-size: 0.875rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
     box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+
 }
 
 .badge-icon {
@@ -794,11 +796,13 @@ p {
 }
 
 @keyframes pulse {
+
     0%,
     100% {
         opacity: 0.5;
         transform: scale(1);
     }
+
     50% {
         opacity: 0.8;
         transform: scale(1.05);
@@ -1123,6 +1127,7 @@ p {
     .hero-buttons {
         flex-direction: row;
     }
+
     .form-row {
         grid-template-columns: 1fr 1fr;
     }
@@ -1133,76 +1138,97 @@ p {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+
     .aides-etat-text h2 {
         font-size: 2rem;
     }
+
     .aides-etat-image img {
         height: 300px;
     }
+
     .economies-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+
     .economies-text h2 {
         font-size: 2rem;
     }
+
     .economies-image img {
         height: 300px;
     }
+
     /* Benefits Section Mobile */
     .section-title {
         font-size: 2rem;
     }
+
     .section-description {
         font-size: 1.125rem;
         margin-bottom: 3rem;
     }
+
     .benefits-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
         margin-bottom: 3rem;
     }
+
     .benefit-card {
         padding: 2rem;
     }
+
     .card-content h3 {
         font-size: 1.25rem;
     }
+
     .stats-section {
         padding: 2rem;
     }
+
     .stats-header h3 {
         font-size: 1.5rem;
     }
+
     .stats-grid {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+
     .stat-item {
         padding: 1.5rem 1rem;
         gap: 0.75rem;
     }
+
     .stat-number {
         font-size: 1.75rem;
     }
+
     .stat-icon {
         width: 2.5rem;
         height: 2.5rem;
     }
+
     .stat-icon svg {
         width: 1.25rem;
         height: 1.25rem;
     }
+
     .benefits-cta {
         padding: 2rem;
     }
+
     .cta-content h3 {
         font-size: 1.5rem;
     }
+
     .cta-buttons {
         flex-direction: column;
         width: 100%;
     }
+
     .cta-buttons .btn {
         min-width: unset;
         width: 100%;
@@ -1213,51 +1239,66 @@ p {
     .nav {
         display: flex;
     }
+
     .hero-title {
         font-size: 4rem;
     }
+
     .aides-etat-content {
         grid-template-columns: 1fr 1fr;
     }
+
     .aides-etat-text h2 {
         font-size: 3rem;
     }
+
     .economies-content {
         grid-template-columns: 1fr 1fr;
     }
+
     .economies-text h2 {
         font-size: 3rem;
     }
+
     .form-section-title {
         font-size: 3rem;
     }
+
     .benefits-grid {
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     }
+
     .stats-grid {
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
+
     .stat-item {
         padding: 2.5rem 2rem;
         gap: 1.25rem;
     }
+
     .stat-number {
         font-size: 3rem;
     }
+
     .stat-icon {
         width: 4rem;
         height: 4rem;
     }
+
     .stat-icon svg {
         width: 2rem;
         height: 2rem;
     }
+
     .section-title {
         font-size: 3rem;
     }
+
     .benefit-card {
         padding: 3rem;
     }
+
     .benefits-cta {
         padding: 4rem;
     }
@@ -1267,6 +1308,7 @@ p {
     .hero {
         padding: 5rem 0 8rem;
     }
+
     .hero-title {
         font-size: 4rem;
     }
@@ -1297,6 +1339,7 @@ p {
 /* Reduce paint on scroll */
 
 @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {
@@ -1432,6 +1475,7 @@ img {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -1714,26 +1758,32 @@ img {
         padding: 1.5rem;
         margin: 0 1rem;
     }
+
     .lead-form-container {
         padding: 2rem 1.5rem;
         margin: 0 1rem;
     }
+
     .lead-form .form-row {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+
     .hero-form .form-row {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+
     .lead-form-header h2 {
         font-size: 2rem;
     }
+
     .lead-form-submit,
     .hero-form-submit {
         min-width: unset;
         width: 100%;
     }
+
     .form-disclaimer {
         flex-direction: column;
         gap: 0.25rem;
@@ -2692,101 +2742,129 @@ img {
     .form-section-wrapper {
         padding: 3rem 0;
     }
+
     .form-section-badge {
         font-size: 0.8rem;
         padding: 0.4rem 0.8rem;
     }
+
     .form-section-title {
         font-size: 2rem;
     }
+
     .form-section-title::after {
         width: 40px;
         height: 3px;
     }
+
     .form-section-description {
         font-size: 1.1rem;
         margin-bottom: 3rem;
     }
+
     .form-layout {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+
     .form-content-column {
         order: 2;
     }
+
     .form-column {
         order: 1;
     }
+
     .content-image img {
         height: 250px;
     }
+
     .content-text h3 {
         font-size: 1.25rem;
     }
+
     .trust-badges {
         grid-template-columns: repeat(2, 1fr);
         gap: 0.75rem;
         margin-top: 1.5rem;
     }
+
     .trust-badges .badge {
         padding: 1rem 0.75rem;
         min-height: 70px;
         font-size: 0.8rem;
     }
+
     .trust-badges .badge .icon,
     .trust-badges .badge i {
         font-size: 1.25rem;
     }
+
     .trust-badges .badge span {
         font-size: 0.75rem;
     }
+
     .form-card-compact {
         max-width: 100%;
     }
+
     .form-header-compact {
         padding: 15px;
     }
+
     .form-header-compact h3 {
         font-size: 16px;
     }
+
     .form-content-compact {
         padding: 15px;
     }
+
     .step-indicator-compact {
         padding: 12px;
     }
+
     .step-indicator-compact .step {
         padding: 0 10px;
     }
+
     .form-grid {
         grid-template-columns: 1fr;
     }
+
     .form-header {
         padding: 20px;
     }
+
     .form-content {
         padding: 20px;
     }
+
     .form-footer {
         flex-direction: column;
         gap: 10px;
     }
+
     .form-buttons {
         flex-direction: column;
         gap: 15px;
     }
+
     .form-button {
         width: 100%;
         justify-content: center;
     }
+
     .step-indicator {
         flex-wrap: wrap;
         gap: 15px;
     }
+
     .step {
         flex: 1;
         min-width: 120px;
     }
+
     .step-connector {
         display: none;
     }
@@ -2800,4 +2878,76 @@ img {
     width: 1em;
     height: 1em;
     fill: currentColor;
+}
+
+/* Section background */
+.sponsors {
+    padding: 3rem 1rem;
+    /* box-shadow: linear-gradient(135deg, var(--primary), var(--accent));
+    background-color: var(--light); */
+    margin-top: 20px;
+    /* background: linear-gradient(135deg, var(--primary), var(--accent)); */
+}
+
+/* Centered container */
+.sponsors-container {
+    max-width: 1120px;
+    /* same as max-w-7xl */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    text-align: center;
+}
+
+/* Title */
+.sponsors-title {
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #9ca3af;
+    /* text-gray-400 */
+}
+
+/* Sponsor link */
+.sponsor-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9ca3af;
+    /* default gray */
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.sponsor-link:hover {
+    color: #e5e7eb;
+    /* hover to lighter gray */
+}
+
+/* Sponsor logos */
+.sponsor-logo {
+    height: 24px;
+    /* same as h-6 */
+    width: auto;
+    fill: currentColor;
+    /* inherits text color */
+}
+
+.sponsor-logo.large {
+    height: 66px;
+    /* larger version */
+    margin-top: 0.5rem;
+}
+
+.sponsors-logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
 }
