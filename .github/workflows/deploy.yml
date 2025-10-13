@@ -24,6 +24,6 @@ jobs:
           server: ftp.cluster021.hosting.ovh.net
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist  # Replace with your Astro build output folder
+          local-dir: ./dist/  # Replace with your Astro build output folder
           server-dir: /www   # Your FTP folder
           protocol: ftp      # Plain FTP
