@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { submitLead } from '../lib/supabase.js';
+import { submitLead } from '../lib/mysqlClient.js';
+
 import TrustBadges from './TrustBadges.jsx';
 
 export default function LeadForm() {
@@ -125,6 +126,7 @@ export default function LeadForm() {
           callback: false,
           newsletter: false
         });
+        window.location.href = `/Thank-You?token=${result.data.token}`
         setCurrentStep(1);
       } else {
         setSubmitStatus('error');
@@ -485,7 +487,7 @@ export default function LeadForm() {
                           checked={formData.callback}
                           onChange={handleInputChange}
                         />
-                        <label htmlFor="callback">Je souhaite être rappelé par CALHAN ENERGIES</label>
+                        <label htmlFor="callback">Je souhaite être rappelé par panneauxsolairfrance</label>
                       </div>
                       <div className="checkbox-option-compact">
                         <input
@@ -520,19 +522,6 @@ export default function LeadForm() {
                     </button>
                   </div>
                 </div>
-
-                {/* Status Messages */}
-                {submitStatus === 'success' && (
-                  <div className="form-message success" style={{display: 'block'}}>
-                    ✅ Merci ! Votre demande a été envoyée. Nous vous contacterons sous 24h.
-                  </div>
-                )}
-
-                {submitStatus === 'error' && (
-                  <div className="form-message error" style={{display: 'block'}}>
-                    ❌ Erreur lors de l'envoi. Veuillez réessayer.
-                  </div>
-                )}
               </form>
             </div>
           </div>
