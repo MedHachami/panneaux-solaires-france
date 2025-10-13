@@ -1,0 +1,29 @@
+name: Deploy to OVH FTP
+
+on:
+  push:
+    branches:
+      - main  # deploy on main branch
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Build Astro project
+        run: |
+          npm install
+          npm run build  # adjust if your build command is different
+
+      - name: Deploy via FTP to OVH
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ftp.cluster021.hosting.ovh.net
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist  # replace with your Astro build output folder
+          server-dir: /www   # your FTP folder
+          protocol: ftp      # plain FTP, not SSH
