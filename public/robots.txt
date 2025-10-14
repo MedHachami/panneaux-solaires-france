@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://panneaux-solaires-france-y62r.vercel.app/sitemap.xml
+Sitemap: https://www.panneauxsolairfrance.com//sitemap.xml
