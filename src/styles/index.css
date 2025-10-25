@@ -142,7 +142,7 @@ p {
 .nav a {
     font-size: 0.875rem;
     font-weight: 500;
-    color: var(--muted-foreground);
+    color: #132440;
     text-decoration: none;
     transition: color 0.2s;
 }
@@ -255,7 +255,7 @@ p {
 }
 
 .hero-title .highlight {
-    color: var(--primary);
+    color: #3B9797;
 }
 
 .hero-description {
@@ -515,13 +515,13 @@ p {
     align-items: center;
     gap: 0.5rem;
     padding: 0.5rem 1rem;
-    color: white;
+    color: #3B9797;
     border-radius: 50px;
     font-size: 0.875rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
     box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
-    background: linear-gradient(135deg, var(--primary), var(--accent));
+    background: #fff;
 }
 
 .badge-icon {
@@ -3017,7 +3017,7 @@ main-content {}
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #5a9216 0%, #7ab82d 100%);
+    background: linear-gradient(135deg, #16476A 0%, #3B9797 100%);
     color: #ffffff;
     border: none;
 }
@@ -3059,7 +3059,6 @@ main-content {}
 .nav-btn {
     display: inline-block;
     padding: 10px 18px;
-    /* background-color: #007bff; */
     /* blue */
     color: #fff;
     text-decoration: none;
@@ -3071,11 +3070,12 @@ main-content {}
     cursor: pointer;
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
     box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
-    background: linear-gradient(135deg, var(--primary), var(--accent));
+    /* background: linear-gradient(135deg, var(--primary), var(--accent)); */
+    background: #3B9797;
 }
 
 .nav-btn:hover {
-    background-color: #0069d9;
+    background-color: #16476A;
     transform: translateY(-2px);
 }
 
@@ -3096,10 +3096,11 @@ main-content {}
 
 @media (max-width: 480px) {
     .nav-btn {
-        width: 100%;
+        width: 50%;
         text-align: center;
         padding: 12px 16px;
         font-size: 15px;
+        background: #3B9797;
     }
 }
 
